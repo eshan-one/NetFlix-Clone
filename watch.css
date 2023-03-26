@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html,{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+}
+
+.final-img{
+    font-size: 1rem;
+    margin: 0 auto;
+    
+}
+
+
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.final-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #950101;
+  
+}
+
+.play{
+    margin-left: 1em;
+    padding: 0.5em;
+    border: 2px solid whitesmoke;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+h2{
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    background-color: whitesmoke; 
+    
+}
+
+
+
+h2:hover,
+play:hover{
+    color: whitesmoke;
+    background-color:black; 
+    border: 1px solid whitesmoke;
+}
+
+
+@media(min-width: 576px){
+      .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .final-img{
+        width: 50%;
+        font-size: 1rem;
+    }
+    
+    img{
+        margin-bottom: 1em;
+    }
+    
+    .episodes{
+        width: 50%;
+        padding: 1em;
+        margin-top: 0;
+        
+    }
+    h2{
+       width: 100%;
+       box-shadow: 2px 2px blanchedalmond;  
+    }
+    
+  
+       
+    
+}
+
+
+
+
+

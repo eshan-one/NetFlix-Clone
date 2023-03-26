@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html,{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background: black;
+    color: whitesmoke;
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-left: 1em;
+    width: 100%;
+    min-width: 400px;
+    background-color: #950101;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;   
+}
+
+.fa-bars{
+    font-size: 2rem;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+
+.navbar,
+.intro{
+    min-width: 250px;
+}
+
+.modal{
+    
+    width: 100%;
+    min-width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #950101;
+    padding: 1em;
+    text-align: center;
+    
+}
+
+#modal-close-btn{
+    width: 40px;
+    position: absolute;
+    top: 0.2em;
+    right: 0.2em;
+    cursor: pointer;
+}
+
+
+a{
+    font-size: 1rem;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border-bottom: 2px solid whitesmoke;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+a:hover{
+    color: wheat;
+    cursor: pointer;
+}
+
+.intro{
+    width: 100%;
+    margin-top: 4em;
+    min-width: 250px;
+    border: 1px solid #950101;
+    padding: 1em;
+    grid-column: 1 / -1;
+    object-fit: cover;
+    
+}
+
+.intro-title{
+  
+   
+}
+
+
+
+
+
+.collection{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+
+
+.fa-circle-play{
+    
+    font-size: 4rem;
+}
+
+.collection-title {
+    text-align: center;
+    color: #00C896;
+    grid-column: 1 / -1;
+}
+
+img{
+    max-width: 100%;
+}
+
+.movie{
+    object-fit: cover;
+    width: 100%;
+}
+
+.daredevil-img{
+
+    
+
+}
+
+.kantara{
+    object-fit: cover;
+}
+
+p{
+    font-size: 1.5rem;
+    
+}
+
+
+.collection,
+.collection-blog,
+.movie,
+.intro{
+    border-radius: 3px;
+}
+
+
+
+
+.collection-blog {
+    transition: transform .2s;
+    background-color: #2D2727;
+    cursor: pointer;
+    padding: 1em;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #950101;
+}
+
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    color: wheat;
+}
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    text-align: center; 
+    
+}
+
+
+@media(min-width: 576px){
+    .intro{
+        margin-left: 0 ;
+        background-size: cover;
+        object-fit: cover;
+        grid-column: 1 / -1;
+          
+    }
+    
+    .collection-blog{
+        transition: transform .2s;
+        box-shadow: 2px 2px 5px #950101;
+    }
+    .collection-title{
+        font-size: 2rem;
+    }
+    
+    .collection-blog:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+    
+    
+}
+
+
+
